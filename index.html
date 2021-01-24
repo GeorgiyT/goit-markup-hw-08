@@ -324,7 +324,7 @@
         </section>
 
         <!-- Regular Customers -->
-        <!-- <section class="sections-padding">
+        <section class="reg-customers sections-padding">
             <div class="container">
                 <h2 class="sections-headers">Постоянные клиенты</h2>
                 <ul class="reg-customers-lists lists">
@@ -376,10 +376,10 @@
         </section>
     </main>
 
-    <footer class="footer sections-padding"> -->
+    <footer class="footer sections-padding">
 
         <!-- Logo+adress -->
-        <!-- <div class="container">
+        <div class="container">
             <div class="footer-contacts">
                 <a href="./index.html" class="logo-link link" aria-label="название сайта" lang="en">
                     <span class="logo-text">Web</span>Studio
@@ -400,10 +400,10 @@
                         </li>
                     </ul>
                 </address>
-            </div> -->
+            </div>
 
-        <!-- Socials list -->
-        <!-- <div class="footer-socials">
+            <!-- Socials list -->
+            <div class="footer-socials">
                 <p>присоединяйтесь</p>
                 <ul class="socials-lists lists">
                     <li class="socials-lists-item">
@@ -435,10 +435,10 @@
                         </a>
                     </li>
                 </ul>
-            </div> -->
+            </div>
 
-        <!-- Subscribe -->
-        <!-- <div class="footer-subscribe">
+            <!-- Subscribe -->
+            <div class="footer-subscribe">
                 <p>Подпишитесь на рассылку</p>
                 <form action="#" class="footer-subscribe-form">
                     <input type="email" name="user-email" class="email-form-input" placeholder="E-mail">
@@ -451,77 +451,76 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
-        <!-- Backdrop -->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
+    <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
 
-                <!-- Close button -->
-                <button type="button" class="modal-close-button" data-modal-close>
-                    <svg class="modal-close-button-svg">
-                        <use href="./images/sprite.svg#close-button"></use>
-                    </svg>
-                </button>
+            <!-- Close button -->
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg class="modal-close-button-svg">
+                    <use href="./images/sprite.svg#close-button"></use>
+                </svg>
+            </button>
 
-                <!-- Main forms -->
-                <form action="#" class="backdrop-form">
-                    <p class="backdrop-form-label">Оставьте свои данные, мы вам перезвоним</p>
+            <!-- Main forms -->
+            <form action="#" class="backdrop-form">
+                <p class="backdrop-form-label">Оставьте свои данные, мы вам перезвоним</p>
 
-                    <label class="backdrop-form-titles">
-                        Имя
-                        <span class="backdrop-form-titles-icon">
-                            <input type="text" name="user-name" class="backdrop-form-input">
-                            <svg class="backdrop-form-titles-icon-svg backdrop-form-name-icon">
-                                <use href="./images/sprite.svg#name-icon"></use>
-                            </svg>
-                        </span>
-                    </label>
-
-                    <label class="backdrop-form-titles">
-                        Телефон
-                        <span class="backdrop-form-titles-icon">
-                            <input type="tel" name="user-tel" class="backdrop-form-input">
-                            <svg class="backdrop-form-titles-icon-svg backdrop-form-tel-icon">
-                                <use href="./images/sprite.svg#tel-icon"></use>
-                            </svg>
-                        </span>
-                    </label>
-
-
-                    <label class="backdrop-form-titles">
-                        Почта
-                        <span class="backdrop-form-titles-icon">
-                            <input type="email" name="user-email" class="backdrop-form-input">
-                            <svg class="backdrop-form-titles-icon-svg backdrop-form-email-icon">
-                                <use href="./images/sprite.svg#email-icon"></use>
-                            </svg>
-                        </span>
-                    </label>
-
-                    <label class="backdrop-form-titles">
-                        Комментарий
-                        <textarea name="user-message" class="backdrop-form-textarea"
-                            placeholder="Введите текст"></textarea>
-                    </label>
-
-                    <span class="backdrop-form-agreement-wrapper">
-                        <input type="checkbox" class="backdrop-form-agreement-checkbox visually-hidden"
-                            name="user-policy" value="user-policy-ok" id="policy">
-                        <label for="policy" class="backdrop-form-agreement">Соглашаюсь с рассылкой и
-                            принимаю&nbsp;<a href="">Условия договора</a>
-                            <svg class="backdrop-form-policy-box">
-                                <use href="./images/sprite.svg#check-mark"></use>
-                            </svg>
-                        </label>
+                <label class="backdrop-form-titles">
+                    Имя
+                    <span class="backdrop-form-titles-icon">
+                        <input type="text" name="user-name" class="backdrop-form-input">
+                        <svg class="backdrop-form-titles-icon-svg backdrop-form-name-icon">
+                            <use href="./images/sprite.svg#name-icon"></use>
+                        </svg>
                     </span>
-                    <button type="submit" class="backdrop-form-submit-btn">Отправить</button>
-                </form>
-            </div>
-        </div>
+                </label>
 
-        <script src="./js/header-menu.js"></script>
-        <script src="./js/modal.js"></script>
+                <label class="backdrop-form-titles">
+                    Телефон
+                    <span class="backdrop-form-titles-icon">
+                        <input type="tel" name="user-tel" class="backdrop-form-input">
+                        <svg class="backdrop-form-titles-icon-svg backdrop-form-tel-icon">
+                            <use href="./images/sprite.svg#tel-icon"></use>
+                        </svg>
+                    </span>
+                </label>
+
+
+                <label class="backdrop-form-titles">
+                    Почта
+                    <span class="backdrop-form-titles-icon">
+                        <input type="email" name="user-email" class="backdrop-form-input">
+                        <svg class="backdrop-form-titles-icon-svg backdrop-form-email-icon">
+                            <use href="./images/sprite.svg#email-icon"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="backdrop-form-titles">
+                    Комментарий
+                    <textarea name="user-message" class="backdrop-form-textarea" placeholder="Введите текст"></textarea>
+                </label>
+
+                <span class="backdrop-form-agreement-wrapper">
+                    <input type="checkbox" class="backdrop-form-agreement-checkbox visually-hidden" name="user-policy"
+                        value="user-policy-ok" id="policy">
+                    <label for="policy" class="backdrop-form-agreement">Соглашаюсь с рассылкой и
+                        принимаю&nbsp;<a href="">Условия договора</a>
+                        <svg class="backdrop-form-policy-box">
+                            <use href="./images/sprite.svg#check-mark"></use>
+                        </svg>
+                    </label>
+                </span>
+                <button type="submit" class="backdrop-form-submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/header-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

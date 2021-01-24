@@ -4,6 +4,8 @@
 @media screen and (min-width: 1200px) {
   .what-are-we {
     display: block;
+    padding-top: calc(94px / 2);
+
     .lists {
       display: flex;
       flex-wrap: wrap;
