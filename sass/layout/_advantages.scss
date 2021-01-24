@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and(min-width: 768px) {
+@media screen and(min-width: 768px ) and (max-width: 1199px) {
   .advantages {
     &-list {
       display: flex;
@@ -75,6 +75,34 @@
 
       &:not(:first-child) {
         margin-top: 0px;
+      }
+
+      & > h3 {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .advantages {
+    &-list {
+      display: flex;
+    }
+
+    &-list-item {
+      width: calc(25% - 15px);
+
+      &:not(:last-child) {
+        margin-right: auto;
+      }
+
+      &:not(:first-child) {
+        margin-top: 0px;
+      }
+
+      & > h3 {
+        text-align: left;
       }
     }
   }
