@@ -1,0 +1,16 @@
+//VARIABLES
+@import "./utils/variables";
+
+//BASE
+@import "./base/common";
+
+//COMPONENTS
+@import "./components/logo";
+@import "./components/sections";
+@import "./components/socials";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/filter-buttons";
+@import "./layout/our-projects";
+@import "./layout/footer";

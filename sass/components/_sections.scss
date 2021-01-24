@@ -1,0 +1,22 @@
+.sections {
+  &-headers {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    color: $headers-color;
+    text-align: center;
+  }
+
+  &-padding {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sections {
+    &-padding {
+      padding: 94px 0;
+    }
+  }
+}

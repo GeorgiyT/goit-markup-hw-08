@@ -1,0 +1,67 @@
+// .our-team {
+//   background-color: #f5f4fa;
+
+//   &-lists {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   &-list-item {
+//     width: 270px;
+//     background-color: $main-header-color;
+//   }
+
+//   &-list-item:not(:last-child) {
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+//   }
+
+//   &-list-item:nth-child(4n) {
+//     margin-right: 0px;
+//   }
+
+//   &-list-item:nth-last-child(-n + 4) {
+//     margin-bottom: 0px;
+//   }
+
+//   img {
+//     margin-bottom: 30px;
+//   }
+
+//   &-headers {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.188;
+//     letter-spacing: 0.03em;
+//     color: $headers-color;
+//   }
+//   &-position {
+//     font-size: 16px;
+//     line-height: 1.188;
+//     letter-spacing: 0.03em;
+//     color: $simple-text-color;
+//     padding-bottom: 16px;
+//   }
+//   &-list-item {
+//     display: block;
+//     text-align: center;
+//     padding-bottom: 30px;
+//     border-radius: 0px 0px 4px 4px;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//   }
+
+//   .socials-svg {
+//     fill: #afb1b8;
+//   }
+
+//   .socials:hover,
+//   .socials:focus {
+//     background-color: $accent-color;
+//   }
+
+//   .socials:hover .socials-svg,
+//   .socials:focus .socials-svg {
+//     fill: $main-header-color;
+//   }
+// }
