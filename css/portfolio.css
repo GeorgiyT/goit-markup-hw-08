@@ -12,6 +12,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .address-info {
@@ -63,6 +65,31 @@ img {
   .sections-padding {
     padding: 94px 0;
   }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-lists {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-lists-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-svg {
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
