@@ -54,7 +54,7 @@
 .header-menu-container {
   padding: 60px 60px;
   position: absolute;
-  top: 100%;
+  top: 100%; // - нужно ставить 0!
   left: 0;
   width: 100%;
   max-width: 480px;
@@ -270,6 +270,7 @@
     background-color: $accent-color;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .header {
     max-width: 100%;
