@@ -667,7 +667,7 @@ img {
 }
 
 .hero h1 {
-  width: 360px;
+  max-width: 360px;
 }
 
 .hero-main-title {
@@ -896,7 +896,7 @@ img {
 }
 
 .our-team-list-item {
-  width: 450px;
+  width: 100%;
   background-color: #ffffff;
   display: block;
   text-align: center;
@@ -953,16 +953,19 @@ img {
 .reg-customers-lists {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin: -3.125%;
+}
+
+.reg-customers-lists-item {
+  width: 43.75%;
+  margin: 3.125%;
 }
 
 .reg-customers-lists-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
   height: 90px;
-  margin: 15px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
@@ -1136,10 +1139,9 @@ img {
 }
 
 .email-form-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
   outline: none;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
