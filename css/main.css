@@ -34,11 +34,6 @@ img {
   pointer-events: none;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-}
-
 .container h2 {
   margin-bottom: 30px;
 }
@@ -47,16 +42,18 @@ img {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
     max-width: 480px;
     margin: 0 auto;
+    padding: 0 3.125%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 }
@@ -1008,14 +1005,22 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .reg-customers-lists-link {
+  .reg-customers-lists {
+    margin: -15px;
+  }
+  .reg-customers-lists-item {
     width: 226px;
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .reg-customers-lists-link {
+  .reg-customers-lists {
+    margin: -15px;
+  }
+  .reg-customers-lists-item {
     width: 170px;
+    margin: 15px;
   }
 }
 
