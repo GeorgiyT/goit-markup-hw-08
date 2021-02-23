@@ -51,6 +51,68 @@
                     </li>
                 </ul>
             </address>
+
+            <button type="button" class="mobile-menu-btn" aria-controls="header-menu-container" aria-expanded="false"
+                mobile-menu-open>
+                <svg aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu-mobile"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-menu-modal is-hidden" mobile-modal>
+
+                <button type="button" class="mobile-menu-modal-close-button" mobile-menu-close>
+                    <svg class="mobile-menu-modal-close-button-svg">
+                        <use class="icon-cross" href="./images/sprite.svg#close-button"></use>
+                    </svg>
+                </button>
+
+                <!-- Main forms -->
+                <form action="#" class="header-menu-container">
+                    <ul class="lists">
+                        <li class="header-menu-container-list-item is-active">
+                            <a href="./index.html" class="header-menu-container-list-link link"
+                                aria-label="Перейти в студию">Студия</a>
+                        </li>
+                        <li class="header-menu-container-list-item">
+                            <a href="./portfolio.html" class="header-menu-container-list-link link active"
+                                aria-label="Перейти в портфолио">Портфолио</a>
+                        </li>
+                        <li class="header-menu-container-list-item">
+                            <a href="#" class="header-menu-container-list-link link"
+                                aria-label="Перейти в контакты">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-menu-container-address">
+                        <ul class="lists">
+                            <li class="header-menu-container-address-list-item">
+                                <a href="mailto:info@devstudio.com" class="header-menu-container-contact-link link"
+                                    aria-label="емейл адрес">
+                                    info@devstudio.com</a>
+                            </li>
+                            <li class="header-menu-container-address-list-item">
+                                <a href="tel:+380961111111" class="header-menu-container-contact-link link"
+                                    aria-label="телефон">
+                                    +38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu-socials-list lists">
+                            <li>
+                                <a href="#" class="link">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
         </div>
     </header>
 
@@ -82,8 +144,29 @@
                     <li class="our-projects-list-item">
                         <a href="" class="link">
                             <div class="our-projects-list-item-description">
-                                <img src="./images/portfolio/img.jpg" alt="Ноутбук с разработанным нами сайтом"
-                                    width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/pc-tech.webp 1x, ./images/portfolio/pc-tech@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/portfolio/pc-tech.jpg 1x, ./images/portfolio/pc-tech@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/portfolio/tab-tech.webp 1x, ./images/portfolio/tab-tech@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/portfolio/tab-tech.jpg 1x, ./images/portfolio/tab-tech@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/mob-tech.webp 1x, ./images/portfolio/mob-tech@2x.webp 2x"
+                                        media="(min-width:320px)" type="image/webp">
+                                    <source
+                                        srcset="./images/portfolio/mob-tech.jpg 1x, ./images/portfolio/mob-tech@2x.jpg 2x"
+                                        media="(min-width:320px)">
+                                    <img class="team-list__img" src="./images/portfolio/mob-tech.jpg"
+                                        alt="Ноутбук с разработанным нами сайтом"
+                                        aria-label="Ноутбук с разработанным нами сайтом">
+                                </picture>
                             </div>
                             <div class="our-projects-list-border">
                                 <h3>Технокряк</h3>
@@ -93,8 +176,28 @@
                     </li>
                     <li class="our-projects-list-item">
                         <a href="" class="link">
-                            <img src="./images/portfolio/img-1.jpg" alt="Наш дизайн, баскетболисты и цветные полосы"
-                                width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/pc-star.webp 1x, ./images/portfolio/pc-star@2x.webp 2x"
+                                    media="(min-width:1200px)" type="image/webp">
+                                <source srcset="./images/portfolio/pc-star.jpg 1x, ./images/portfolio/pc-star@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/portfolio/tab-star.webp 1x, ./images/portfolio/tab-star@2x.webp 2x"
+                                    media="(min-width:768px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/tab-star.jpg 1x, ./images/portfolio/tab-star@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/portfolio/mob-star.webp 1x, ./images/portfolio/mob-star@2x.webp 2x"
+                                    media="(min-width:320px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/mob-star.jpg 1x, ./images/portfolio/mob-star@2x.jpg 2x"
+                                    media="(min-width:320px)">
+                                <img class="team-list__img" src="./images/portfolio/mob-star.jpg"
+                                    alt="Наш дизайн, баскетболисты и цветные полосы"
+                                    aria-label="Наш дизайн, баскетболисты и цветные полосы">
+                            </picture>
                             <div class="our-projects-list-border">
                                 <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
                                 <p>Дизайн</p>
@@ -103,8 +206,29 @@
                     </li>
                     <li class="our-projects-list-item">
                         <a href="" class="link">
-                            <img src="./images/portfolio/img-2.jpg"
-                                alt="Логотип нашего приложения для рыбного ресторана" width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/pc-seafood.webp 1x, ./images/portfolio/pc-seafood@2x.webp 2x"
+                                    media="(min-width:1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/pc-seafood.jpg 1x, ./images/portfolio/pc-seafood@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/portfolio/tab-seafood.webp 1x, ./images/portfolio/tab-seafood@2x.webp 2x"
+                                    media="(min-width:768px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/tab-seafood.jpg 1x, ./images/portfolio/tab-seafood@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/portfolio/mob-seafood.webp 1x, ./images/portfolio/mob-seafood@2x.webp 2x"
+                                    media="(min-width:320px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/mob-seafood.jpg 1x, ./images/portfolio/mob-seafood@2x.jpg 2x"
+                                    media="(min-width:320px)">
+                                <img class="team-list__img" src="./images/portfolio/mob-seafood.jpg"
+                                    alt="Логотип нашего приложения для рыбного ресторана"
+                                    aria-label="Логотип нашего приложения для рыбного ресторана">
+                            </picture>
                             <div class="our-projects-list-border">
                                 <h3>Ресторан <span lang="en">Seafood</span></h3>
                                 <p>Приложение</p>
@@ -113,7 +237,28 @@
                     </li>
                     <li class="our-projects-list-item">
                         <a href="" class="link">
-                            <img src="./images/portfolio/img-3.jpg" alt="Фото наушников" width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/pc-prime.webp 1x, ./images/portfolio/pc-prime@2x.webp 2x"
+                                    media="(min-width:1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/pc-prime.jpg 1x, ./images/portfolio/pc-prime@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/portfolio/tab-prime.webp 1x, ./images/portfolio/tab-prime@2x.webp 2x"
+                                    media="(min-width:768px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/tab-prime.jpg 1x, ./images/portfolio/tab-prime@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/portfolio/mob-prime.webp 1x, ./images/portfolio/mob-prime@2x.webp 2x"
+                                    media="(min-width:320px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/mob-prime.jpg 1x, ./images/portfolio/mob-prime@2x.jpg 2x"
+                                    media="(min-width:320px)">
+                                <img class="team-list__img" src="./images/portfolio/mob-prime.jpg" alt="Фото наушников"
+                                    aria-label="Фото наушников">
+                            </picture>
                             <div class="our-projects-list-border">
                                 <h3>Проект <span lang="en">Prime</span></h3>
                                 <p>Маркетинг</p>
@@ -122,8 +267,29 @@
                     </li>
                     <li class="our-projects-list-item">
                         <a href="" class="link">
-                            <img src="./images/portfolio/img-4.jpg" alt="Картинка с белой и коричневой коробками"
-                                width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/pc-boxes.webp 1x, ./images/portfolio/pc-boxes@2x.webp 2x"
+                                    media="(min-width:1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/pc-boxes.jpg 1x, ./images/portfolio/pc-boxes@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/portfolio/tab-boxes.webp 1x, ./images/portfolio/tab-boxes@2x.webp 2x"
+                                    media="(min-width:768px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/tab-boxes.jpg 1x, ./images/portfolio/tab-boxes@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/portfolio/mob-boxes.webp 1x, ./images/portfolio/mob-boxes@2x.webp 2x"
+                                    media="(min-width:320px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/mob-boxes.jpg 1x, ./images/portfolio/mob-boxes@2x.jpg 2x"
+                                    media="(min-width:320px)">
+                                <img class="team-list__img" src="./images/portfolio/mob-boxes.jpg"
+                                    alt="Картинка с белой и коричневой коробками"
+                                    aria-label="Картинка с белой и коричневой коробками">
+                            </picture>
                             <div class="our-projects-list-border">
                                 <h3>Проект <span lang="en">Boxes</span></h3>
                                 <p>Приложение</p>
@@ -132,8 +298,28 @@
                     </li>
                     <li class="our-projects-list-item">
                         <a href="" class="link">
-                            <img src="./images/portfolio/img-5.jpg" alt="Наш веб-сайт на экране" width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/pc-inspiration.webp 1x, ./images/portfolio/pc-inspiration@2x.webp 2x"
+                                    media="(min-width:1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/pc-inspiration.jpg 1x, ./images/portfolio/pc-inspiration@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/portfolio/tab-inspiration.webp 1x, ./images/portfolio/tab-inspiration@2x.webp 2x"
+                                    media="(min-width:768px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/tab-inspiration.jpg 1x, ./images/portfolio/tab-inspiration@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/portfolio/mob-inspiration.webp 1x, ./images/portfolio/mob-inspiration@2x.webp 2x"
+                                    media="(min-width:320px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/mob-inspiration.jpg 1x, ./images/portfolio/mob-inspiration@2x.jpg 2x"
+                                    media="(min-width:320px)">
+                                <img class="team-list__img" src="./images/portfolio/mob-inspiration.jpg"
+                                    alt="Наш веб-сайт на экране" aria-label="Наш веб-сайт на экране">
+                            </picture>
                             <div class="our-projects-list-border">
                                 <h3><span lang="en">Inspiration has no Borders</span></h3>
                                 <p>Веб-сайт</p>
@@ -142,8 +328,28 @@
                     </li>
                     <li class="our-projects-list-item">
                         <a href="" class="link">
-                            <img src="./images/portfolio/img-6.jpg" alt="Книга с нашим дизайном" width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/pc-limited.webp 1x, ./images/portfolio/pc-limited@2x.webp 2x"
+                                    media="(min-width:1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/pc-limited.jpg 1x, ./images/portfolio/pc-limited@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/portfolio/tab-limited.webp 1x, ./images/portfolio/tab-limited@2x.webp 2x"
+                                    media="(min-width:768px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/tab-limited.jpg 1x, ./images/portfolio/tab-limited@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/portfolio/mob-limited.webp 1x, ./images/portfolio/mob-limited@2x.webp 2x"
+                                    media="(min-width:320px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/mob-limited.jpg 1x, ./images/portfolio/mob-limited@2x.jpg 2x"
+                                    media="(min-width:320px)">
+                                <img class="team-list__img" src="./images/portfolio/mob-limited.jpg"
+                                    alt="Книга с нашим дизайном" aria-label="Книга с нашим дизайном">
+                            </picture>
                             <div class="our-projects-list-border">
                                 <h3>Издание <span lang="en">Limited Edition</span></h3>
                                 <p>Дизайн</p>
@@ -152,8 +358,29 @@
                     </li>
                     <li class="our-projects-list-item">
                         <a href="" class="link">
-                            <img src="./images/portfolio/img-7.jpg" alt="Бирка с логотипом нашего проекта" width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/portfolio/pc-limited.webp 1x, ./images/portfolio/pc-limited@2x.webp 2x"
+                                    media="(min-width:1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/pc-limited.jpg 1x, ./images/portfolio/pc-limited@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./images/portfolio/tab-limited.webp 1x, ./images/portfolio/tab-limited@2x.webp 2x"
+                                    media="(min-width:768px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/tab-limited.jpg 1x, ./images/portfolio/tab-limited@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/portfolio/mob-limited.webp 1x, ./images/portfolio/mob-limited@2x.webp 2x"
+                                    media="(min-width:320px)" type="image/webp">
+                                <source
+                                    srcset="./images/portfolio/mob-limited.jpg 1x, ./images/portfolio/mob-limited@2x.jpg 2x"
+                                    media="(min-width:320px)">
+                                <img class="team-list__img" src="./images/portfolio/mob-limited.jpg"
+                                    alt="Бирка с логотипом нашего проекта"
+                                    aria-label="Бирка с логотипом нашего проекта">
+                            </picture>
                             <div class="our-projects-list-border">
                                 <h3>Проект <span lang="en">LAB</span></h3>
                                 <p>Маркетинг</p>
@@ -162,8 +389,7 @@
                     </li>
                     <li class="our-projects-list-item">
                         <a href="" class="link">
-                            <img src="./images/portfolio/img-8.jpg" alt="Наше приложение на экране ноутбука" width="370"
-                                height="294">
+                            <img src="./images/portfolio/img-8.jpg" alt="Наше приложение на экране ноутбука">
                             <div class="our-projects-list-border">
                                 <h3><span lang="en">Growing Business</span></h3>
                                 <p>Приложение</p>
@@ -251,6 +477,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/header-menu.js"></script>
 </body>
 
 </html>

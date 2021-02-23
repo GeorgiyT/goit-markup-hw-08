@@ -1,74 +1,82 @@
-// .our-projects-list {
-//   display: flex;
-//   flex-wrap: wrap;
+.our-projects-list {
+  //   display: flex;
+  //   flex-wrap: wrap;
 
-//   &-border {
-//     border: 1px solid #eeeeee;
-//     border-top: none;
-//     padding: 20px 24px;
-//   }
+  &-border {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 20px 24px;
+  }
 
-//   &-item {
-//     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
+  &-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-//   &-item:not(:last-child) {
-//     margin-right: 30px;
-//     margin-bottom: 30px;
-//   }
+  &-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
-//   &-item:nth-child(3n) {
-//     margin-right: 0px;
-//   }
+  //   &-item:not(:last-child) {
+  //     margin-right: 30px;
+  //     margin-bottom: 30px;
+  //   }
 
-//   &-item:nth-last-child(-n + 3) {
-//     margin-bottom: 0px;
-//   }
+  //   &-item:nth-child(3n) {
+  //     margin-right: 0px;
+  //   }
 
-//   &-item h3 {
-//     font-size: 18px;
-//     line-height: 2;
-//     letter-spacing: 0.06em;
-//     color: $headers-color;
-//     margin-bottom: 4px;
-//   }
+  //   &-item:nth-last-child(-n + 3) {
+  //     margin-bottom: 0px;
+  //   }
 
-//   &-item p {
-//     font-size: 16px;
-//     line-height: 1.875;
-//     letter-spacing: 0.03em;
-//     color: $simple-text-color;
-//   }
+  &-item img {
+    width: 100%;
+  }
 
-//   &-item:hover {
-//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-//       1px 4px 6px rgba(0, 0, 0, 0.16);
-//   }
+  &-item h3 {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $headers-color;
+    margin-bottom: 4px;
+  }
 
-//   &-item-description {
-//     position: relative;
-//     overflow: hidden;
-//   }
+  &-item p {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $simple-text-color;
+  }
 
-//   &-item-description::before {
-//     display: inline-block;
-//     content: "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.";
-//     position: absolute;
-//     top: 0px;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     transform: translateY(100%);
-//     color: $main-header-color;
-//     font-size: 18px;
-//     line-height: 1.556;
-//     letter-spacing: 0.03em;
-//     padding: 63px 24px 24px 24px;
-//     background-color: rgba(33, 150, 243, 0.9);
-//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
+  &-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
-//   &-item:hover &-item-description::before {
-//     transform: translateY(0%);
-//   }
-// }
+  &-item-description {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-item-description::before {
+    display: inline-block;
+    content: "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    color: $main-header-color;
+    font-size: 18px;
+    line-height: 1.556;
+    letter-spacing: 0.03em;
+    padding: 63px 24px 24px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-item:hover &-item-description::before {
+    transform: translateY(0%);
+  }
+}

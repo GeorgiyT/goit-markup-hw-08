@@ -51,51 +51,68 @@
                     </li>
                 </ul>
             </address>
+
             <button type="button" class="mobile-menu-btn" aria-controls="header-menu-container" aria-expanded="false"
-                header-menu-open close-menu>
+                mobile-menu-open>
                 <svg aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/sprite.svg#icon-menu-mobile"></use>
-                    <use class="icon-cross" href="./images/sprite.svg#close-button"></use>
                 </svg>
             </button>
 
-            <div class="header-menu-container is-hidden" id="header-menu-container" header-menu>
-                <ul class="lists">
-                    <li class="header-menu-container-list-item is-active">
-                        <a href="./index.html" class="header-menu-container-list-link link active"
-                            aria-label="Перейти в студию">Студия</a>
-                    </li>
-                    <li class="header-menu-container-list-item">
-                        <a href="./portfolio.html" class="header-menu-container-list-link link"
-                            aria-label="Перейти в портфолио">Портфолио</a>
-                    </li>
-                    <li class="header-menu-container-list-item">
-                        <a href="#" class="header-menu-container-list-link link"
-                            aria-label="Перейти в контакты">Контакты</a>
-                    </li>
-                </ul>
-                <address class="header-menu-container-address">
+            <div class="mobile-menu-modal is-hidden" mobile-modal>
+
+                <button type="button" class="mobile-menu-modal-close-button" mobile-menu-close>
+                    <svg class="mobile-menu-modal-close-button-svg">
+                        <use class="icon-cross" href="./images/sprite.svg#close-button"></use>
+                    </svg>
+                </button>
+
+                <!-- Main forms -->
+                <form action="#" class="header-menu-container">
                     <ul class="lists">
-                        <li class="header-menu-container-address-list-item">
-                            <a href="mailto:info@devstudio.com" class="header-menu-container-contact-link link"
-                                aria-label="емейл адрес">
-                                <svg class="email-svg">
-                                    <use href="./images/sprite.svg#e-mail"></use>
-                                </svg>
-                                info@devstudio.com</a>
+                        <li class="header-menu-container-list-item is-active">
+                            <a href="./index.html" class="header-menu-container-list-link link active"
+                                aria-label="Перейти в студию">Студия</a>
                         </li>
-                        <li class="header-menu-container-address-list-item">
-                            <a href="tel:+380961111111" class="header-menu-container-contact-link link"
-                                aria-label="телефон">
-                                <svg class="smartphone-svg">
-                                    <use href="./images/sprite.svg#smartphone"></use>
-                                </svg>
-                                +38 096 111 11 11</a>
+                        <li class="header-menu-container-list-item">
+                            <a href="./portfolio.html" class="header-menu-container-list-link link"
+                                aria-label="Перейти в портфолио">Портфолио</a>
+                        </li>
+                        <li class="header-menu-container-list-item">
+                            <a href="#" class="header-menu-container-list-link link"
+                                aria-label="Перейти в контакты">Контакты</a>
                         </li>
                     </ul>
-                </address>
+                    <div class="header-menu-container-address">
+                        <ul class="lists">
+                            <li class="header-menu-container-address-list-item">
+                                <a href="mailto:info@devstudio.com" class="header-menu-container-contact-link link"
+                                    aria-label="емейл адрес">
+                                    info@devstudio.com</a>
+                            </li>
+                            <li class="header-menu-container-address-list-item">
+                                <a href="tel:+380961111111" class="header-menu-container-contact-link link"
+                                    aria-label="телефон">
+                                    +38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu-socials-list lists">
+                            <li>
+                                <a href="#" class="link">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
             </div>
-
         </div>
     </header>
 
