@@ -1,11 +1,14 @@
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  //   margin-bottom: -15px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 
   &-item {
     margin-bottom: 15px;
+  }
+
+  &-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 
   &-item:not(:last-child) {
@@ -39,5 +42,9 @@
   .button-list {
     flex-wrap: nowrap;
     justify-content: center;
+
+    &-item {
+      margin-bottom: 0px;
+    }
   }
 }

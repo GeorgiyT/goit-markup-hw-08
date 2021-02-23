@@ -70,7 +70,7 @@
                 <!-- Main forms -->
                 <form action="#" class="header-menu-container">
                     <ul class="lists">
-                        <li class="header-menu-container-list-item is-active">
+                        <li class="header-menu-container-list-item active">
                             <a href="./index.html" class="header-menu-container-list-link link active"
                                 aria-label="Перейти в студию">Студия</a>
                         </li>
@@ -169,18 +169,40 @@
                 <h2 class="sections-headers">Чем мы занимаемся</h2>
                 <ul class="lists">
                     <li class="what-are-we-list-item">
-                        <img src="./images/what-are-we-doing/what-are-we-doing-1.png" alt="программист набирает код"
-                            width="370" height="294" />
+                        <picture>
+                            <source
+                                srcset="./images/what-are-we-doing/product-1.webp 1x, ./images/what-are-we-doing/product-1@2x.webp 2x"
+                                type="image/webp">
+                            <source
+                                srcset="./images/what-are-we-doing/product-1.jpg 1x,./images/what-are-we-doing/product-1@2x.jpg 2x">
+                            <img class="team-list__img" src="./images/what-are-we-doing/product-1.jpg"
+                                alt="программист набирает код" aria-label="программист набирает код">
+                        </picture>
                         <p class="what-are-we-list-item-text">Десктопные приложения</p>
                     </li>
                     <li class="what-are-we-list-item">
-                        <img src="./images/what-are-we-doing/what-are-we-doing-2.png"
-                            alt="дизайнер выбирает стиль отображения на телефоне" width="370" height="294" />
+                        <picture>
+                            <source
+                                srcset="./images/what-are-we-doing/product-2.webp 1x, ./images/what-are-we-doing/product-2@2x.webp 2x"
+                                type="image/webp">
+                            <source
+                                srcset="./images/what-are-we-doing/product-2.jpg 1x,./images/what-are-we-doing/product-2@2x.jpg 2x">
+                            <img class="team-list__img" src="./images/what-are-we-doing/product-2.jpg"
+                                alt="дизайнер выбирает стиль отображения на телефоне"
+                                aria-label="дизайнер выбирает стиль отображения на телефоне">
+                        </picture>
                         <p class="what-are-we-list-item-text">Мобильные приложения</p>
                     </li>
                     <li class="what-are-we-list-item">
-                        <img src="./images/what-are-we-doing/what-are-we-doing-3.png"
-                            alt="дизайнер выбирает цвет из палитры" width="370" height="294" />
+                        <picture>
+                            <source
+                                srcset="./images/what-are-we-doing/product-3.webp 1x, ./images/what-are-we-doing/product-3@2x.webp 2x"
+                                type="image/webp">
+                            <source
+                                srcset="./images/what-are-we-doing/product-3.jpg 1x,./images/what-are-we-doing/product-3@2x.jpg 2x">
+                            <img class="team-list__img" src="./images/what-are-we-doing/product-3.jpg"
+                                alt="дизайнер выбирает цвет из палитры" aria-label="дизайнер выбирает цвет из палитры">
+                        </picture>
                         <p class="what-are-we-list-item-text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -193,8 +215,22 @@
                 <h2 class="sections-headers">Наша команда</h2>
                 <ul class="our-team-lists lists">
                     <li class="our-team-list-item">
-                        <img src="./images/team/ihordem.jpg" alt="фото Игоря Демьяненко" min-width="270"
-                            min-height="260" />
+                        <picture>
+                            <source srcset="./images/team/pc-staff-1.webp 1x, ./images/team/pc-staff-1@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/team/pc-staff-1.jpg 1x, ./images/team/pc-staff-1@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/team/tab-staff-1.webp 1x, ./images/team/tab-staff-1@2x.webp 2x"
+                                media="(min-width:768px)" type="image/webp">
+                            <source srcset="./images/team/tab-staff-1.jpg 1x, ./images/team/tab-staff-1@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/team/mob-staff-1.webp 1x, ./images/team/mob-staff-1@2x.webp 2x"
+                                media="(min-width:320px)" type="image/webp">
+                            <source srcset="./images/team/mob-staff-1.jpg 1x, ./images/team/mob-staff-1@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img class="team-list__img" src="./images/team/mob-staff-1.jpg" alt="фото Игоря Демьяненко"
+                                aria-label="фото Игоря Демьяненко">
+                        </picture>
                         <h3 class="our-team-headers">Игорь Демьяненко</h3>
                         <p class="our-team-position" lang="en">Product Designer</p>
                         <ul class="socials-lists lists">
@@ -229,8 +265,22 @@
                         </ul>
                     </li>
                     <li class="our-team-list-item">
-                        <img src="./images/team/olgarep.jpg" alt="фото Ольги Репиной" min-width="270"
-                            min-height="260" />
+                        <picture>
+                            <source srcset="./images/team/pc-staff-2.webp 1x, ./images/team/pc-staff-2@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/team/pc-staff-2.jpg 1x, ./images/team/pc-staff-2@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/team/tab-staff-2.webp 1x, ./images/team/tab-staff-2@2x.webp 2x"
+                                media="(min-width:768px)" type="image/webp">
+                            <source srcset="./images/team/tab-staff-2.jpg 1x, ./images/team/tab-staff-2@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/team/mob-staff-2.webp 1x, ./images/team/mob-staff-2@2x.webp 2x"
+                                media="(min-width:320px)" type="image/webp">
+                            <source srcset="./images/team/mob-staff-2.jpg 1x, ./images/team/mob-staff-2@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img class="team-list__img" src="./images/team/mob-staff-2.jpg" alt="фото Ольги Репиной"
+                                aria-label="фото Ольги Репиной">
+                        </picture>
                         <h3 class="our-team-headers">Ольга Репина</h3>
                         <p class="our-team-position" lang="en">Frontend Developer</p>
                         <ul class="socials-lists lists">
@@ -265,8 +315,22 @@
                         </ul>
                     </li>
                     <li class="our-team-list-item">
-                        <img src="./images/team/nikolaitar.jpg" alt="фото Николая Тарасова" min-width="270"
-                            min-height="260" />
+                        <picture>
+                            <source srcset="./images/team/pc-staff-3.webp 1x, ./images/team/pc-staff-3@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/team/pc-staff-3.jpg 1x, ./images/team/pc-staff-3@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/team/tab-staff-3.webp 1x, ./images/team/tab-staff-3@2x.webp 2x"
+                                media="(min-width:768px)" type="image/webp">
+                            <source srcset="./images/team/tab-staff-3.jpg 1x, ./images/team/tab-staff-3@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/team/mob-staff-3.webp 1x, ./images/team/mob-staff-3@2x.webp 2x"
+                                media="(min-width:320px)" type="image/webp">
+                            <source srcset="./images/team/mob-staff-3.jpg 1x, ./images/team/mob-staff-3@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img class="team-list__img" src="./images/team/mob-staff-3.jpg" alt="фото Николая Тарасова"
+                                aria-label="фото Николая Тарасова">
+                        </picture>
                         <h3 class="our-team-headers">Николай Тарасов</h3>
                         <p class="our-team-position" lang="en">Marketing</p>
                         <ul class="socials-lists lists">
@@ -301,8 +365,22 @@
                         </ul>
                     </li>
                     <li class="our-team-list-item">
-                        <img src="./images/team/mihailerm.jpg" alt="Фото Михаила Ермакова" min-width="270"
-                            min-height="260" />
+                        <picture>
+                            <source srcset="./images/team/pc-staff-4.webp 1x, ./images/team/pc-staff-4@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/team/pc-staff-4.jpg 1x, ./images/team/pc-staff-4@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/team/tab-staff-4.webp 1x, ./images/team/tab-staff-4@2x.webp 2x"
+                                media="(min-width:768px)" type="image/webp">
+                            <source srcset="./images/team/tab-staff-4.jpg 1x, ./images/team/tab-staff-4@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/team/mob-staff-4.webp 1x, ./images/team/mob-staff-4@2x.webp 2x"
+                                media="(min-width:320px)" type="image/webp">
+                            <source srcset="./images/team/mob-staff-4.jpg 1x, ./images/team/mob-staff-4@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img class="team-list__img" src="./images/team/mob-staff-4.jpg" alt="Фото Михаила Ермакова"
+                                aria-label="Фото Михаила Ермакова">
+                        </picture>
                         <h3 class="our-team-headers">Михаил Ермаков</h3>
                         <p class="our-team-position" lang="en">UI Designer</p>
                         <ul class="socials-lists lists">

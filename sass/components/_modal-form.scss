@@ -41,7 +41,7 @@
 }
 /* ========== Main forms ========== */
 .backdrop-form {
-  padding: 40px;
+  padding: 8.33vw;
 
   &-label {
     font-weight: bold;
@@ -194,6 +194,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .backdrop-form {
+    padding: 40px;
+  }
   .modal {
     width: 450px;
     min-height: 609px;

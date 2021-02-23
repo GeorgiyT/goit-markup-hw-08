@@ -186,7 +186,7 @@ img {
 
 /* ========== Main forms ========== */
 .backdrop-form {
-  padding: 40px;
+  padding: 8.33vw;
 }
 
 .backdrop-form-label {
@@ -338,6 +338,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .backdrop-form {
+    padding: 40px;
+  }
   .modal {
     width: 450px;
     min-height: 609px;
@@ -471,7 +474,7 @@ img {
 .header-menu-container-list-link {
   font-weight: 500;
   font-size: 8.33vw;
-  line-height: 1.175px;
+  line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -507,7 +510,7 @@ img {
   margin-bottom: 32px;
 }
 
-.header-menu-container-list-item.is-active {
+.header-menu-container-list-item.active {
   margin-bottom: 36px;
 }
 
@@ -696,11 +699,15 @@ img {
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .button-list-item {
   margin-bottom: 15px;
+}
+
+.button-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .button-list-item:not(:last-child) {
@@ -733,24 +740,21 @@ img {
     flex-wrap: nowrap;
     justify-content: center;
   }
+  .button-list-item {
+    margin-bottom: 0px;
+  }
 }
 
 .our-projects-list-border {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+  width: 100%;
 }
 
 .our-projects-list-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-projects-list-item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.our-projects-list-item img {
-  width: 100%;
 }
 
 .our-projects-list-item h3 {
@@ -775,6 +779,7 @@ img {
 .our-projects-list-item-description {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .our-projects-list-item-description::before {
@@ -787,16 +792,45 @@ img {
   height: 100%;
   transform: translateY(100%);
   color: #ffffff;
-  font-size: 18px;
-  line-height: 1.556;
+  font-size: 3.75vw;
+  line-height: 5.83vw;
   letter-spacing: 0.03em;
-  padding: 63px 24px 24px 24px;
+  padding: 16.04vw 5vw 16.04vw 5vw;
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-projects-list-item:hover .our-projects-list-item-description::before {
   transform: translateY(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .our-projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .our-projects-list-border {
+    width: 354px;
+    min-height: 147px;
+  }
+  .our-projects-list-item {
+    margin: 15px;
+  }
+  .our-projects-list-item-description::before {
+    font-size: 18px;
+    line-height: 1.56;
+    padding: 49px 24px 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-projects-list-border {
+    width: 370px;
+  }
+  .our-projects-list-item-description::before {
+    padding: 63px 24px 63px 24px;
+  }
 }
 
 .footer {
